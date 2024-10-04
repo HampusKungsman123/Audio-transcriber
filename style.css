@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Coolfont;
+  src: url(/assets/ModernDOS8x16.ttf);
+}
+
+body {
+  background-color: black;
+  color: green;
+  font-family: Coolfont;
+  font-size: 24px;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.transcription {
+  display: inline-block;
+  border-right: 2px solid green;
+  animation: typing 2s steps(40) infinite, blink 1s step-end infinite;
+  color: green;
+}
+button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: Coolfont;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+hr {
+  border: 1px solid green;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
